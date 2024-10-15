@@ -24,6 +24,17 @@ void Load() {
 	ships.push_back(inv2);
 	Invader* inv3 = new Invader(sf::IntRect(Vector2i(0, 0), Vector2i(32, 32)), { 150,50 });
 	ships.push_back(inv3);
+
+	for (int r = 0; r < 10; ++r) 
+	{
+		auto rect = IntRect();
+		for (int c = 0; c < 4; ++c)
+		{
+			Vector2f position = Vector2f(100,100) ;
+			auto inv = new Invader(rect, position);
+			ships.push_back(inv);
+		}
+	}
 }
 
 void Render() {
