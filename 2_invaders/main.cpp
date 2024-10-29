@@ -30,7 +30,7 @@ void Load() {
 		auto rect = IntRect();
 		for (int c = 0; c < 4; ++c)
 		{
-			Vector2f position = Vector2f(100,100) ;
+			Vector2f position = Vector2f(100, 100) ;
 			auto inv = new Invader(rect, position);
 			ships.push_back(inv);
 		}
